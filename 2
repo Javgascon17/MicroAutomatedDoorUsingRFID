@@ -103,7 +103,7 @@ void loop()
     myservo.write(180); // move the servo to desired angle
   }
   
-  else if (content.substring(1) == "02 53 9F 57" ){ // Check if the UID matches a wrong card
+  else if (content.substring(1) == "02 53 9F 57" || content.substring(1) == "63 A4 D8 06" ){ // Check if the UID matches a wrong card
     digitalWrite(LED_R, HIGH);    // Turn on red LED
     
     //myservo.write(0); // move the servo to desired angle
